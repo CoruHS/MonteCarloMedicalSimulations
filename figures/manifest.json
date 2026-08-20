@@ -1,0 +1,47 @@
+{
+  "config_id": "d3f82c853096",
+  "figures": [
+    {
+      "figure": 1,
+      "png": "figures/figure1.png",
+      "pdf": "figures/figure1.pdf",
+      "caption": "Figure 1. Save the most lives yields 0.9% more expected survivors than the learned cost model when resources cover 50% of arrivals; points are means and horizontal lines are 95% Monte Carlo percentile intervals.",
+      "config_id": "d3f82c853096"
+    },
+    {
+      "figure": 2,
+      "png": "figures/figure2.png",
+      "pdf": "figures/figure2.pdf",
+      "caption": "Figure 2. Subtracting each draw's lottery outcome reveals 4 substantive crossover locations; the learned cost model crosses sickest-first near 40% and 54%. Lottery is zero by construction, and lottery\u2013first-come sign flips are treated as sampling noise between statistically identical policies. Bands are 95% percentile intervals for paired within-draw differences.",
+      "config_id": "d3f82c853096"
+    },
+    {
+      "figure": 3,
+      "png": "figures/figure3.png",
+      "pdf": "figures/figure3.pdf",
+      "caption": "Figure 3. Expected lives and survivor-years trade off across the policies at moderate scarcity (policy-level r = -0.34); the dashed diagonal marks equal proportional change from lottery. Lottery and first come, first served are shown as one point because they are statistically equivalent and visually coincident.",
+      "config_id": "d3f82c853096"
+    },
+    {
+      "figure": 4,
+      "png": "figures/figure4.png",
+      "pdf": "figures/figure4.pdf",
+      "caption": "Figure 4. At moderate scarcity, the learned cost model's disadvantaged-minus-advantaged gap is -8.7 percentage points in allocation and -10.1 points in expected survival. Marker shapes retain the group distinction in grayscale; the allocation panel's 50% reference line marks equal allocation rates.",
+      "config_id": "d3f82c853096"
+    },
+    {
+      "figure": 5,
+      "png": "figures/figure5.png",
+      "pdf": "figures/figure5.pdf",
+      "caption": "Figure 5. At the median latent need (0.58), the learned policy scores a disadvantaged patient $2,382 lower on fitted group lines, although the model received neither group membership nor true need; marginal strips show the generated distributions.",
+      "config_id": "d3f82c853096"
+    },
+    {
+      "figure": 6,
+      "png": "figures/figure6.png",
+      "pdf": "figures/figure6.pdf",
+      "caption": "Figure 6. Attenuating the observed severity score changes the disadvantaged-minus-advantaged allocation gap by -12.8 points for sickest-first and -14.2 points for the learned policy. Survival probabilities remain functions of clinical severity, so benefit-based policies are unchanged by construction.",
+      "config_id": "d3f82c853096"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "config_id": "d3f82c853096",
+  "runtime_seconds": 11.455855499996687,
+  "versions": {
+    "python": "3.12.2",
+    "numpy": "1.26.4",
+    "pandas": "2.3.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.10.3"
+  },
+  "sanity_checks": {
+    "lottery_group_balance_passed": true,
+    "lottery_max_absolute_share_error_pp": 0.06416666666666548,
+    "full_allocation_identity_passed": true,
+    "save_lives_not_below_lottery_passed": true,
+    "heldout_cost_correlation_positive_passed": true,
+    "minimum_heldout_cost_correlation": 0.8355760158361931,
+    "expected_vs_bernoulli_rank_spearman": 0.9642857142857145,
+    "expected_vs_bernoulli_ranking_check_passed": true
+  },
+  "rows_in_results_csv": 28000
+}

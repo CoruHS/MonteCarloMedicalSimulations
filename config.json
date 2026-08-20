@@ -1,0 +1,93 @@
+{
+  "config_id": "d3f82c853096",
+  "parameters": {
+    "study": "Who Should the Algorithm Save?",
+    "base_seed": 20260805,
+    "n_draws": 200,
+    "n_train": 4000,
+    "n_score": 1000,
+    "diagnostic_n_train": 12000,
+    "diagnostic_n_score": 5000,
+    "scarcity_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "moderate_scarcity": 0.5,
+    "p_disadvantaged": 0.4,
+    "age": {
+      "distribution": "truncated_normal",
+      "mean": 57.0,
+      "sd": 18.0,
+      "min": 18.0,
+      "max": 95.0
+    },
+    "severity": {
+      "distribution": "beta_scaled_plus_structural_penalty_and_noise",
+      "beta_alpha": 2.2,
+      "beta_beta": 3.0,
+      "min": 0.0,
+      "max": 24.0,
+      "structural_penalty": 2.0,
+      "noise_sd": 1.25,
+      "robustness_observed_attenuation": 0.15
+    },
+    "survival": {
+      "age_center": 50.0,
+      "treated": {
+        "intercept": 3.2,
+        "severity": -0.16,
+        "age": -0.025
+      },
+      "untreated": {
+        "intercept": 2.0,
+        "severity": -0.18,
+        "age": -0.027
+      }
+    },
+    "life_expectancy": {
+      "intercept_age": 84.0,
+      "severity_penalty_per_point": 0.35,
+      "noise_sd": 4.0,
+      "min": 1.0,
+      "max": 70.0
+    },
+    "arrival_window_hours": 24.0,
+    "true_need": {
+      "severity_weight": 0.6,
+      "benefit_weight": 0.4,
+      "benefit_scale": 0.4,
+      "noise_sd": 0.05,
+      "min": 0.0,
+      "max": 1.2
+    },
+    "access": {
+      "attenuation_delta": 0.3,
+      "prior_utilisation_scale": 12.0,
+      "prior_utilisation_noise_sd": 1.0,
+      "cost_scale_dollars": 24000.0,
+      "cost_noise_sd_dollars": 1800.0
+    },
+    "need_matching_bins": 20,
+    "conditions": {
+      "primary": {
+        "attenuate_observed_severity": false
+      },
+      "attenuated_severity_robustness": {
+        "attenuate_observed_severity": true
+      }
+    },
+    "figures": {
+      "font_family": "DejaVu Serif",
+      "png_dpi": 300,
+      "diagnostic_scatter_points": 3500
+    }
+  }
+}
